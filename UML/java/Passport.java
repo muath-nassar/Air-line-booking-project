@@ -2,6 +2,7 @@ public class Passport {
 
 	private int No;
 	private Country country;
+	private Date expireDate;
 
 	/**
 	 * 
@@ -9,7 +10,7 @@ public class Passport {
 	 * @param country
 	 */
 	public Passport(int No, Country country) {
-
+		throw new UnsupportedOperationException();
 	}
 
 	public int getNo() {
@@ -34,6 +35,18 @@ public class Passport {
 	 */
 	public void setCountry(Country country) {
 		this.country = country;
+	}
+
+	public Date getExpireDate() {
+		return this.expireDate;
+	}
+
+	/**
+	 * 
+	 * @param expireDate
+	 */
+	public void setExpireDate(Date expireDate) {
+		this.expireDate = expireDate;
 	}
 
 }

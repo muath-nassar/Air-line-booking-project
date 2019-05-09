@@ -2,7 +2,11 @@ public class Ticket {
 
 	private int ticketNo;
 	private Flight flight;
-	private Traveler passenger;
+	private Traveller passenger;
+
+	public Ticket() {
+		throw new UnsupportedOperationException();
+	}
 
 	public Flight selectFlight() {
 		throw new UnsupportedOperationException();
@@ -13,10 +17,6 @@ public class Ticket {
 	}
 
 	public void printDetails() {
-		throw new UnsupportedOperationException();
-	}
-
-	public Ticket() {
 		throw new UnsupportedOperationException();
 	}
 
@@ -44,7 +44,7 @@ public class Ticket {
 		this.ticketNo = ticketNo;
 	}
 
-	public Traveler getPassenger() {
+	public Traveller getPassenger() {
 		return this.passenger;
 	}
 
@@ -52,7 +52,7 @@ public class Ticket {
 	 * 
 	 * @param passenger
 	 */
-	public void setPassenger(Traveler passenger) {
+	public void setPassenger(Traveller passenger) {
 		this.passenger = passenger;
 	}
 

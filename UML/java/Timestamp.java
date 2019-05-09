@@ -1,4 +1,4 @@
-public class TimeStamp {
+public class Timestamp {
 
 	private Date date;
 	private Time time;
@@ -8,12 +8,12 @@ public class TimeStamp {
 	 * @param date
 	 * @param time
 	 */
-	public TimeStamp(Date date, Time time) {
-
+	public Timestamp(Date date, Time time) {
+		throw new UnsupportedOperationException();
 	}
 
 	public Time getTime() {
-
+		return this.time;
 	}
 
 	/**
@@ -21,7 +21,7 @@ public class TimeStamp {
 	 * @param time
 	 */
 	public void setTime(int time) {
-		this.time = time;
+		throw new UnsupportedOperationException();
 	}
 
 	public Date getDate() {

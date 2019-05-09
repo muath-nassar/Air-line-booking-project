@@ -4,8 +4,8 @@ public class Flight {
 	private Pilot pilot;
 	private Airport from;
 	private Airport to;
-	private TimeStamp departureTime;
-	private TimeStamp arrivalTime;
+	private Timestamp departureTime;
+	private Timestamp arrivalTime;
 	private float price;
 
 	public Flight() {
@@ -60,7 +60,7 @@ public class Flight {
 		this.to = to;
 	}
 
-	public TimeStamp getDepartureTime() {
+	public Timestamp getDepartureTime() {
 		return this.departureTime;
 	}
 
@@ -68,11 +68,11 @@ public class Flight {
 	 * 
 	 * @param departureTime
 	 */
-	public void setDepartureTime(TimeStamp departureTime) {
+	public void setDepartureTime(Timestamp departureTime) {
 		this.departureTime = departureTime;
 	}
 
-	public TimeStamp getArrivalTime() {
+	public Timestamp getArrivalTime() {
 		return this.arrivalTime;
 	}
 
@@ -80,7 +80,7 @@ public class Flight {
 	 * 
 	 * @param arrivalTime
 	 */
-	public void setArrivalTime(TimeStamp arrivalTime) {
+	public void setArrivalTime(Timestamp arrivalTime) {
 		this.arrivalTime = arrivalTime;
 	}
 
@@ -94,6 +94,15 @@ public class Flight {
 	 */
 	public void setPrice(float price) {
 		this.price = price;
+	}
+
+	/**
+	 * 
+	 * @param passportExpireDate
+	 * @param flightDepartureDate
+	 */
+	private static boolean isValidFlightDate(Date passportExpireDate, Date flightDepartureDate) {
+		throw new UnsupportedOperationException();
 	}
 
 }

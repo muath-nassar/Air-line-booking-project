@@ -1,4 +1,4 @@
-public class Traveler extends Person {
+public class Traveller extends Person {
 
 	private Passport passport;
 	private ArrayList followers;
@@ -9,8 +9,8 @@ public class Traveler extends Person {
 	 * @param name
 	 * @param passport
 	 */
-	public Traveler(String name, Passport passport) {
-
+	public Traveller(String name, Passport passport) {
+		throw new UnsupportedOperationException();
 	}
 
 	public Passport getPassport() {
@@ -46,6 +46,10 @@ public class Traveler extends Person {
 	}
 
 	public void pay() {
+		throw new UnsupportedOperationException();
+	}
+
+	public void addFollowers() {
 		throw new UnsupportedOperationException();
 	}
 
